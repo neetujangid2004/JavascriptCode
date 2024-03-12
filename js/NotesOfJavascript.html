@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notes of Javascript</title>
+    <style>
+        h4 {
+            color: deeppink;
+            padding: 0%;
+            margin: 0%;
+        }
+        .color {
+            color: rgb(233, 129, 32);
+        }
+        h3 {
+            color:  rgb(30, 197, 219);
+            padding: 2%;
+            margin: 0;
+            height: 10px;
+        }
+        h2 {
+            color: rgb(231, 228, 23);
+            padding: 0%;
+            margin: 0;
+        }
+        div {
+            background-color: rgb(22, 20, 20);
+            color: white;
+            width: 90%;
+            padding: 10px;
+            margin: auto;
+            border: 5px solid rgb(204, 51, 51);
+            line-height: 30px;
+            font-size: x-large;
+        }
+        .code {
+            border: 1px solid palevioletred;
+            width: 75%;
+        }
+        table, tr, td {
+            border: 1px solid white;
+            border-collapse: collapse;
+            margin-left: 20px;
+            margin-right: auto;
+            text-align: center;
+        }
+        table {
+            width: 80%;
+        }
+        span {
+            color: rgb(230, 50, 50);
+            text-decoration: solid;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h1 align="center">: Javascript :</h1>
+        Javascript is a programming language <br>Javascript is a Client Side Scripting Language<br>
+        <ul>
+            <li>
+                <h2>What is Scripting ?</h2>
+                Scripting language means story writer language of product development ex-web app, desktop app, android app etc.<br><h3>There are two types of scripting :- </h3>
+                1. Client Side ( Executes in browser [Javascript])<br>2. Server Side ( Executes in Server [PHP])<br><br>
+            </li>
+            <li>
+                <h2>Scripting Type of Javascript</h2>
+                <h3>1. Internal Scripting :- </h3>&lt; html &gt; or &lt; body &gt; <br>&lt; script &gt; write your Javascript code. &lt; /script &gt; <br>&lt; /html &gt; or &lt; /body &gt; <br>
+                <h3>2. External Scripting :-</h3>&lt; html &gt; or &lt; body &gt; <br>&lt; script src="externalpage.js" &gt; &lt; /script &gt; <br>&lt; /html &gt; or &lt; /body &gt;
+            </li>
+        </ul>
+        <h4>What is Data ?</h4>
+        Any information is called a data ex :- number, text, word, audio, video or any file. <br><br>
+        <ul>
+            <li>
+                <h2>How to get any output (result) in Javascript</h2>
+                <h3>window.alert()</h3>
+                If you want to display your result in a dialog box (Popup box) so you have to use window.alert() method.
+                <h3>document.write()</h3>
+                If you want to display your result in your webpage without using any html tag so you have to use document.write() method.
+                <h3>console.log()</h3>
+                If you want to display your result in the console window of your browser so you have to use console.log() method.
+                <h3>innerHTML</h3>
+                If you want to display your result with the help of html tag in your webpage so you have to use innerHTML method.
+            </li>
+        </ul> 
+        <h4>Q1. Write a program to print Hello World a dialog box.</h4>
+        &lt; body &gt; <br>&lt; script &gt; <br>window.alert("Hello World"); <br>&lt; /script &gt; <br>&lt; /body &gt; <br><br>
+        <h4>Usefull Symbol Name :-</h4>
+        <pre>()  Parenthesis
+[]  Square brackets or box brackets
+{}  Braces or curly brackets
+<>  angle brackets
+''  single quote
+""  double quote
+:   colon
+;   semi colon
+/   forward slash
+\   backward slash
+&   and
+-   hyphens
+_   underscore
+=   assign
+==  equal to
+*   astric  </pre>
+            <h4>What is programming ?</h4>
+            The steps that you take to achieve any result will be called programming.
+            <ul>
+                <li>
+                    <h2>Javascript Reserved Words (Keywords)</h2>
+                    Keywords are the way to define the meaning of any data for your interpreter and compiler. <br><br>
+                    <table>
+                        <caption>Keywords</caption>
+                        <tr>
+                            <td>abstract</td>
+                            <td>arguments</td>
+                            <td>await</td>
+                            <td>boolean</td>
+                            <td>break</td>
+                            <td>byte</td>
+                        </tr>
+                        <tr>
+                            <td>catch</td>
+                            <td>char</td>
+                            <td>class</td>
+                            <td>const</td>
+                            <td>continue</td>
+                            <td>debugger</td>
+                        </tr>
+                        <tr>
+                            <td>delete</td>
+                            <td>do</td>
+                            <td>double</td>
+                            <td>else</td>
+                            <td>enum</td>
+                            <td>eval</td>
+                        </tr>
+                        <tr>
+                            <td>extends</td>
+                            <td>false</td>
+                            <td>final</td>
+                            <td>finally</td>
+                            <td>float</td>
+                            <td>for</td>
+                        </tr>
+                        <tr>
+                            <td>goto</td>
+                            <td>if</td>
+                            <td>implements</td>
+                            <td>import</td>
+                            <td>in</td>
+                            <td>instanceof</td>
+                        </tr>
+                        <tr>
+                            <td>interface</td>
+                            <td>let</td>
+                            <td>long</td>
+                            <td>native</td>
+                            <td>new</td>
+                            <td>null</td>
+                        </tr>
+                        <tr>
+                            <td>private</td>
+                            <td>protected</td>
+                            <td>public</td>
+                            <td>return</td>
+                            <td>short</td>
+                            <td>static</td>
+                        </tr>
+                        <tr>
+                            <td>switch</td>
+                            <td>synchronized</td>
+                            <td>this</td>
+                            <td>throw</td>
+                            <td>typeof</td>
+                            <td>var</td>
+                        </tr>
+                        <tr>
+                            <td>volatile</td>
+                            <td>while</td>
+                            <td>with</td>
+                            <td>yield</td>
+                            <td>case</td>
+                            <td>default</td>
+                        </tr>
+                        <tr>
+                            <td>void</td>
+                            <td>super</td>
+                            <td>package</td>
+                            <td>int</td>
+                            <td>export</td>
+                            <td>function</td>
+                        </tr>
+                    </table><br>
+                </li>
+                <li>
+                    <h2>Javascript Function</h2>
+                    Identity of a function is () <br>
+                    A function is a group of statements that together perform a task And it works when you call it.
+                    <h3>There are two types of functions :-</h3>
+                    <h4 class="color">1. Built in function (predefined function) :-</h4>
+                    Their work is already sure And these can be called just. You can not make predefined function only you can call predefined function.
+                    <pre>Example :-  alert()  : window.alert()
+            write()  : document.write()
+            log()    : console.log()
+            <div class="code">&lt;body&gt;
+    &lt;script&gt;
+        document.write("Hello Prakash");
+        console.log("Hello World");
+        function hello() {
+            window.alert("Hello Neetu");
+        }
+    &lt;/script&gt;
+    &lt;h1>Hello World, I am Neetu Jangid &lt;/h1&gt;
+    &lt;!-- Predefined Function --&gt;
+    &lt;button onclick="hello()">OnClick&lt;/button&gt;
+    &lt;button onmouseover="hello()">OnMouseOver&lt;/button&gt;
+    &lt;button onmouseout="hello()">OnMouseOut&lt;/button&gt;
+                                
+    &lt;button onclick="window.close()">Close the window&lt;/button&gt;
+    &lt;button onclick="window.open('../images (7).jpg')">Open a photo&lt;/button&gt;
+    &lt;button onclick="window.print()">Print of open window&lt;/button&gt;
+&lt;/body&gt;
+<img src="" alt="output"></div></pre>
+                    Note : remember you can only call predefined functions you have not any permission to change or edit predefined functions.<br>If you want to call a predefined function you have to learn about mouse or keyboard events<br>
+                    <span>Mouse Events</span>:- onclicke, onchange, onmouseover, onmouseout<br><br>
+                    <h4 class="color">2. User defined function :-</h4>
+                    Javascript allows you to define functions according to your need. These functions are known as user-dfined functions.
+                    <pre><div class="code">&lt;body&gt;
+        &lt;script&gt;
+            function name(){
+            window.alert("Neetu Jangid");
+            }
+            function first(){
+                window.alert("I am a software engineer.");
+            }
+            function second(){
+                window.alert("I am work on js files.");
+            }
+        &lt;/script&gt;
+        &lt;h1>Hello World, I am Neetu Jangid &lt;/h1&gt;
+        &lt;!-- User defined Function --&gt;
+        &lt;h3>What is my name ?&lt;/h3&gt;
+        &lt;button onclick="name()">Click here to know your name&lt;/button&gt;
+        &lt;button onclick="first()">First&lt;/button>
+        &lt;button onclick="second()">Second&lt;/button>
+&lt;/body&gt;
+<img src="" alt="output"></div></pre>
+                </li>
+            </ul>
+    </div>
+</body>
+</html>
