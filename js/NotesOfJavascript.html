@@ -203,7 +203,7 @@ _   underscore
                     <h3>There are two types of functions :-</h3>
                     <h4 class="color">1. Built in function (predefined function) :-</h4>
                     Their work is already sure And these can be called just. You can not make predefined function only you can call predefined function.
-                    <pre>Example :-  alert()  : window.alert()
+<pre>Example :-  alert()  : window.alert()
             write()  : document.write()
             log()    : console.log()
             <div class="code">&lt;body&gt;
@@ -224,12 +224,12 @@ _   underscore
     &lt;button onclick="window.open('../images (7).jpg')">Open a photo&lt;/button&gt;
     &lt;button onclick="window.print()">Print of open window&lt;/button&gt;
 &lt;/body&gt;
-<img src="../images/predefindfunction.png" alt="output" width="80%" height="290"></div></pre>
+        <img src="../images/predefindfunction.png" alt="output" width="80%" height="290"></div></pre>
                     Note : remember you can only call predefined functions you have not any permission to change or edit predefined functions.<br>If you want to call a predefined function you have to learn about mouse or keyboard events<br>
                     <span>Mouse Events</span>:- onclicke, onchange, onmouseover, onmouseout<br><br>
                     <h4 class="color">2. User defined function :-</h4>
                     Javascript allows you to define functions according to your need. These functions are known as user-dfined functions.
-                    <pre><div class="code">&lt;body&gt;
+<pre><div class="code">&lt;body&gt;
     &lt;script&gt;
         function name(){
             window.alert("Neetu Jangid");
@@ -248,12 +248,39 @@ _   underscore
     &lt;button onclick="first()">First&lt;/button>
     &lt;button onclick="second()">Second&lt;/button>
 &lt;/body&gt;
-<img src="../images/userDefined.png" alt="output" width="75%" height="200"></div></pre>
+        <img src="../images/userDefined.png" alt="output" width="75%" height="200"></div></pre>
                 </li>
                 <li>
                     <h2>Variable :-</h2>
                     <h3>What is Variable ?</h3>
-                    Variable is a medium that allows us to work on data stored in memeory.
+                    Variable is a medium that allows us to work on data stored in memeory. <br>
+                    X = 8
+<pre><div class="code">&lt;body&gt;
+    &lt;script&gt;
+        // variable :-  1.Global   2.Local
+        var x = 8;                  // global variable
+        document.write(x);
+        var s = "Neetu";
+        document.write(s);
+        function sum(){
+            var a = 10,b = 20;      // local variable   
+            var sum = a + b;    
+            window.alert(sum);
+        }
+        var a = 5 + 6 - 2 / 8 * 4;
+        document.write(a);
+    &lt;/script&gt;
+    &lt;button onclick="sum()">Click&lt;/button&gt;
+&lt;/body&gt;
+        <img src="../images/variable.png" alt="output" width="75%" height="200"></div></pre>
+                </li>
+                <li>
+                    <h2>Selectors in Javascript</h2>
+                    Selectors are used to select html elements to perform some task and actions on html elements. <h3>There are so many Selectors in Javascript :-</h3>
+                    <h4 class="color">1. getElementsByTagName() : </h4>select Html element through tag name. <br><br>
+                    <h4 class="color">2. getElementsByName() : </h4>select Html element through the value of name attribute. <br><br>
+                    <h4 class="color">3. getElementsById() : </h4>select Html element through the value of id attribute. <br><br>
+                    <h4 class="color">4. getElementsByClassName() : </h4>select Html element through the value of class attribute.
                 </li>
             </ul>
     </div>
