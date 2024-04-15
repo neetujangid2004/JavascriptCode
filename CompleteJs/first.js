@@ -281,7 +281,8 @@ alert("Hello"); // one time popup
 let user_name = prompt("Enter user name : ");    // input from user
 console.log("User name : ",user_name);
 
-// Practice 4 : Get user to input a number using prompt ("Enter a number : "). Check if the number is a multiple of 5 or not.
+/* Practice 4 : Get user to input a number using prompt ("Enter a number : "). 
+    Check if the number is a multiple of 5 or not. */
 let user_number = prompt("Enter a number : ");
 if (user_number % 5 == 0){
     console.log(user_number,"is a mulitple of 5");
@@ -315,3 +316,80 @@ else if(score>=0 && score<=49){
 }
 
 console.log("*******************************************************");
+/* Loops 
+        1.for loop
+        2.while loop
+        3.do-while loop
+*/
+// for loop
+for (let i = 1; i <= 5; i++) {
+    console.log("Hello guy's");
+}
+
+// Practice 6 : Calculate sum of 1 to 5
+let sum = 0;
+for(let i=1; i<=5; i++){
+    sum = sum + i;
+}
+console.log("Sum : ", sum);
+
+// while loop
+let i = 1;
+while(i<=5){
+    console.log("i = ",i);
+    i++;
+}
+
+// do-while loop
+let j = 1;
+do {
+    console.log("Hello");
+    j++;
+}while(j<=5);
+
+// for-of loop
+let string = "Hello";
+let size = 0;
+for(let i of string){
+    // iterator -> characters
+    console.log("i = ",i);
+    size++;
+}
+console.log("size of string = ",size);
+
+// for-in loop
+let $student = {
+    name: "Neetu",
+    age: 20,
+    cgpa: 7.5,
+    isPass: true
+};
+for(let key in $student){
+    console.log("key = ",key, " value = ",$student[key]);
+}
+
+// Practice 7 : Print all even numbers from 0 to 10.
+for(let num=0;num<=10;num++){
+    if(num%2 === 0){
+        console.log(num);
+    }
+}
+
+//  Practice 8 : Create a game where you start with any random game number. Ask the user to keep guessing the game number until the user enters correct value.
+let gameNumber = 25;
+let $userNumber = prompt("Guess the game number : ");
+while($userNumber != gameNumber){
+    $userNumber = prompt("You entered wrong number. Guess again : ");
+}
+console.log("Congratulations, you entered the right number",$userNumber);
+
+console.log("*******************************************************");
+// Strings in js 
+// create string
+let $str = "Neetu jangid";
+
+// string length
+console.log("Length : ",$str.length);
+
+// string indices
+console.log($str[0],"  ",$str[1]);
